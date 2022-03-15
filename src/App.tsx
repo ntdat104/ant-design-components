@@ -4,6 +4,8 @@ import DividerAnt from './components/Layout/DividerAnt';
 import ParagraphAnt from './components/General/TypographyAnt/ParagraphAnt';
 import TextAnt from './components/General/TypographyAnt/TextAnt';
 import TitleAnt from './components/General/TypographyAnt/TitleAnt';
+import ButtonStyled from './components/Simplize/ButtonStyled';
+import AutoCompleteStyled from './components/Simplize/AutoCompleteStyled';
 
 interface Props {}
 
@@ -15,6 +17,8 @@ const App: React.FC<Props> = () => {
       <ParagraphAnt />
       <TextAnt />
       <DividerAnt />
+      <ButtonStyled />
+      <AutoCompleteStyled />
     </>
   );
 };
