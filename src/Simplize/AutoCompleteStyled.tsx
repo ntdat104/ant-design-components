@@ -6,7 +6,7 @@ import { SearchOutlined } from '@ant-design/icons';
 const { Option } = AutoComplete;
 
 const NewAutoComplete = styled(AutoComplete)`
-  width: 556px;
+  width: 100%;
 
   &&&.ant-select-focused .ant-select-selector {
     border: none;
@@ -14,7 +14,7 @@ const NewAutoComplete = styled(AutoComplete)`
   }
 
   && .ant-select-selector {
-    width: 556px;
+    width: 100%;
     background-color: #242526;
     border-radius: 10px;
     border: none;

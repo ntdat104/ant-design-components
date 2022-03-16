@@ -1,13 +1,12 @@
-import { PlusOutlined } from '@ant-design/icons';
 import { Button } from 'antd';
-import React from 'react';
 import styled from 'styled-components';
 
-const BtnStyled = styled(Button)`
+const ButtonStyled = styled(Button)`
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #3a3b3c;
+  border: 1px solid #3a3b3c;
   border-radius: 10px;
   padding: 10px 20px;
   font-family: 'Roboto';
@@ -17,20 +16,22 @@ const BtnStyled = styled(Button)`
   line-height: 19px;
   color: #ffffff;
   height: auto;
+  /* border-color: #3a3b3c; */
   &:hover,
   &:focus {
     background-color: #3a3b3c;
+    border: 1px solid #3a3b3c;
     color: #ffffff;
-    border-color: #3a3b3c;
   }
 
   &.color_blue {
     background-color: #2d88ff;
+    border: 1px solid #2d88ff;
     font-weight: 500;
     &:hover,
     &:focus {
       background-color: #2d88ff;
-      border-color: #2d88ff;
+      border: 1px solid #2d88ff;
     }
   }
 
@@ -49,20 +50,5 @@ const BtnStyled = styled(Button)`
     }
   }
 `;
-
-interface Props {}
-
-const ButtonStyled: React.FC<Props> = () => {
-  return (
-    <>
-      <BtnStyled
-        icon={<PlusOutlined />}
-        className="has_icon"
-      >{`Thêm cổ phiếu`}</BtnStyled>
-      <BtnStyled>{`Làm mới`}</BtnStyled>
-      <BtnStyled className="color_blue">{`Tiếp tục`}</BtnStyled>
-    </>
-  );
-};
 
 export default ButtonStyled;
