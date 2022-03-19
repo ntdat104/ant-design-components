@@ -16,7 +16,6 @@ const ButtonStyled = styled(Button)`
   line-height: 19px;
   color: #ffffff;
   height: auto;
-  /* border-color: #3a3b3c; */
   &:hover,
   &:focus {
     background-color: #3a3b3c;

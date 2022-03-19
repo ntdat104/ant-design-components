@@ -2,6 +2,7 @@ import { Input } from 'antd';
 import styled from 'styled-components';
 
 const InputStyled = styled(Input)`
+  width: 100%;
   height: 38px;
   padding: 0px 16px;
   background-color: #242526;
