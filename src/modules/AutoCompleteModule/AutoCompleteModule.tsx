@@ -7,8 +7,8 @@ import {
   Wrapper,
   Ticker,
   NameVi,
-} from '../../ant-design/AutoCompleteStyled';
-import COMPANY from '../../assets/json/COMPANY.json';
+} from '@/ant-design/AutoCompleteStyled';
+import COMPANY from '@/assets/json/COMPANY.json';
 
 interface Props {
   onSelect: (value: any) => any;

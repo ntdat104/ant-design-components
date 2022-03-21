@@ -3,7 +3,7 @@ import {
   dropdownStyle,
   MenuStyled,
   SelectStyled,
-} from '../../ant-design/SelectStyled';
+} from '@/ant-design/SelectStyled';
 
 interface Props {}
 

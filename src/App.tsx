@@ -1,5 +1,5 @@
 import React from 'react';
-import SelectModule from './modules/SelectModule';
+import SelectModule from '@/modules/SelectModule';
 
 interface Props {}
 

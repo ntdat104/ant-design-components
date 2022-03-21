@@ -1,5 +1,5 @@
+import InputStyled from '@/ant-design/InputStyled';
 import React from 'react';
-import InputStyled from '../../ant-design/InputStyled';
 
 interface Props {}
 

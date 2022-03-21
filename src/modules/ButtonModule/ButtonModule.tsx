@@ -1,7 +1,7 @@
 import React from 'react';
 import { SearchOutlined } from '@ant-design/icons';
 import clsx from 'clsx';
-import ButtonStyled from '../../ant-design/ButtonStyled';
+import ButtonStyled from '@/ant-design/ButtonStyled';
 
 interface Props {}
 
