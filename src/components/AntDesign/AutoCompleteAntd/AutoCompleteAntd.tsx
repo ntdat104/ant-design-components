@@ -7,18 +7,20 @@ import {
   Wrapper,
   Ticker,
   NameVi,
-} from '@/ant-design/AutoCompleteStyled';
+} from './AutoCompleteAntd.styles';
 import COMPANY from '@/assets/json/COMPANY.json';
 
 interface Props {
   onSelect: (value: any) => any;
+  placeholder?: string;
+  allowClear?: boolean;
 }
 
-const AutoCompleteModule: React.FC<Props> = (props) => {
-  const { onSelect } = props;
+const AutoCompleteAntd: React.FC<Props> = (props) => {
+  const { onSelect, placeholder = `Mã cổ phiếu...`, allowClear = true } = props;
   const [companys, setCompanys] = React.useState<any[]>(COMPANY.slice(0, 40));
 
-  const handleSearch = React.useCallback((value: string) => {
+  const handleSearch = (value: string) => {
     const searchCompany = COMPANY.filter(
       (company: any) =>
         company?.ticker?.toUpperCase().includes(value.toUpperCase()) ||
@@ -26,20 +28,20 @@ const AutoCompleteModule: React.FC<Props> = (props) => {
     ).slice(0, 40);
 
     setCompanys(searchCompany);
-  }, []);
+  };
 
-  const handleSelect = React.useCallback((value: any) => {
+  const handleSelect = (value: any) => {
     const company = COMPANY.find((company: any) => company?.ticker === value);
     onSelect(company);
-  }, []);
+  };
 
   return (
     <Wrapper>
       <AutoCompleteStyled
         onSearch={handleSearch}
         onSelect={handleSelect}
-        allowClear={true}
-        placeholder="Mã cổ phiếu..."
+        allowClear={allowClear}
+        placeholder={placeholder}
         dropdownRender={(menu) => <MenuStyled>{menu}</MenuStyled>}
         dropdownStyle={dropdownStyle}
       >
@@ -55,4 +57,4 @@ const AutoCompleteModule: React.FC<Props> = (props) => {
   );
 };
 
-export default AutoCompleteModule;
+export default AutoCompleteAntd;

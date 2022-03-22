@@ -1,25 +1,16 @@
 import React from 'react';
-import SelectModule from '@/modules/SelectModule';
+import AutoCompleteAntd from './components/AntDesign/AutoCompleteAntd';
+import ConfirmModalAntd from './components/AntDesign/ConfirmModalAntd';
 
 interface Props {}
 
 const App: React.FC<Props> = () => {
-  // const handleSelect = (value: any) => {
-  //   console.log(value);
-  // };
-
   return (
     <div style={{ margin: `40px` }}>
-      {/* <ButtonModule /> */}
-      {/* <div style={{ maxWidth: 500 }}>
-        <AutoCompleteModule onSelect={handleSelect} />
-      </div> */}
-      {/* <div style={{ maxWidth: 400 }}>
-        <InputModule />
-      </div> */}
-      <div style={{ width: 240 }}>
-        <SelectModule />
-      </div>
+      <AutoCompleteAntd onSelect={(value: any) => console.log(value)} />
+      <ConfirmModalAntd visible={true} title={`Test`}>
+        <p>{`abcabcabcabcabcbacbacb`}</p>
+      </ConfirmModalAntd>
     </div>
   );
 };

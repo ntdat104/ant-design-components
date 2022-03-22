@@ -1,9 +1,9 @@
-import { AutoComplete } from 'antd';
-import styled from 'styled-components';
+import { AutoComplete } from "antd";
+import styled from "styled-components";
 
 export const dropdownStyle = {
-  borderRadius: '10px',
-  backgroundColor: '#242526',
+  borderRadius: "10px",
+  backgroundColor: "#242526",
 };
 
 export const MenuStyled = styled.div`
@@ -12,7 +12,7 @@ export const MenuStyled = styled.div`
     margin: 2px 4px;
     border-radius: 5px;
 
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -32,14 +32,14 @@ export const AutoCompleteStyled = styled(AutoComplete)`
   width: 100%;
 
   &&&.ant-select-focused .ant-select-selector {
-    border: none;
-    box-shadow: none;
+    border: 1px solid #2D88FF;
+    /* box-shadow: none; */
   }
 
   && .ant-select-selector {
     width: 100%;
     background-color: #242526;
-    border: none;
+    border: 1px solid #3a3b3c;
     border-radius: 10px;
     padding: 4px 40px;
     height: 38px;
@@ -76,7 +76,7 @@ export const Wrapper = styled.div`
 export const Ticker = styled.span`
   width: 40px;
   display: inline-block;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -86,7 +86,7 @@ export const Ticker = styled.span`
 
 export const NameVi = styled.span`
   margin-left: 4px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
